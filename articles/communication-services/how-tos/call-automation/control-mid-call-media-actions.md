@@ -123,7 +123,7 @@ callAutomationClient.getCallConnectionAsync(callConnectionId)
 ```
 -----
 
-When your application no longer wishes to receive DTMF tones from the participant anymore you can use the `StopContinuousDtmfRecognitionAsync` method to let ACS know to stop detecting DTMF tones.
+When your application no longer wishes to receive DTMF tones from the participant anymore you can use the `StopContinuousDtmfRecognitionAsync` method to let Azure Communication Services know to stop detecting DTMF tones.
 
 ### StopContinuousDtmfRecognitionAsync
 Stop detecting DTMF tones sent by participant.
@@ -166,7 +166,7 @@ if (acsEvent instanceof ContinuousDtmfRecognitionToneReceived) {
 ```
 -----
 
-ACS provides you with a `SequenceId` as part of the `ContinuousDtmfRecognitionToneReceived` event, which your application can use to reconstruct the order in which the participant entered the DTMF tones.
+Azure Communication Services provides you with a `SequenceId` as part of the `ContinuousDtmfRecognitionToneReceived` event, which your application can use to reconstruct the order in which the participant entered the DTMF tones.
 
 ### ContinuousDtmfRecognitionFailed Event
 Example of how you can handle when DTMF tone detection fails.
