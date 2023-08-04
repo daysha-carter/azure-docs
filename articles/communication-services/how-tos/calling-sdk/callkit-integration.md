@@ -22,7 +22,7 @@ description: Steps on how to integrate CallKit with ACS Calling SDK
 
   ## CallKit Integration (within SDK)
 
- CallKit Integration in the ACS iOS SDK handles interaction with CallKit for us. To perform any call operations like mute/unmute, hold/resume, we only need to call the API on the ACS SDK. 
+ CallKit Integration in the Azure Communication Services iOS SDK handles interaction with CallKit for us. To perform any call operations like mute/unmute, hold/resume, we only need to call the API on the Azure Communication Services SDK. 
 
   ### Initialize call agent with CallKitOptions
 
@@ -123,7 +123,7 @@ description: Steps on how to integrate CallKit with ACS Calling SDK
 
   ### Handle incoming push notification payload
 
-  When the app receives incoming push notification payload, we need to call `handlePush` to process it. ACS Calling SDK will raise the `IncomingCall` event.
+  When the app receives incoming push notification payload, we need to call `handlePush` to process it. Azure Communication Services Calling SDK will raise the `IncomingCall` event.
 
   ```Swift
   public func handlePushNotification(_ pushPayload: PKPushPayload)
